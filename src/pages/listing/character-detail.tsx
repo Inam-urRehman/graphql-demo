@@ -55,10 +55,9 @@ export const CharacterDetails = () => {
         <Descriptions.Item label="Location">
           {character.location?.name} <br />
         </Descriptions.Item>
-        <Descriptions.Item label="Origin">
+        <Descriptions.Item label="Origin" span={2}>
           {character.origin?.name}
         </Descriptions.Item>
-        <Descriptions.Item label="Official Receipts">$60.00</Descriptions.Item>
         <Descriptions.Item label="Episode">
           <Table dataSource={character.episode} columns={columns} />;
         </Descriptions.Item>
