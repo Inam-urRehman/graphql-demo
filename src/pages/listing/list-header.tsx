@@ -8,6 +8,7 @@ export interface FiltersProps {
   formValues: FormValues;
   toggleVisible: (visible: boolean) => void;
   onSubmit?: (values: FormValues) => void;
+  onPageChange: (page: number) => void;
 }
 
 export interface ListHeaderProps extends Omit<FiltersProps, "toggleVisible"> {
@@ -28,7 +29,10 @@ export const ListHeader = (props: ListHeaderProps) => {
           <span>List of characters</span>
           <div className="list-actions">
             <Search
-              onSearch={onSearch}
+              onSearch={(val) => {
+                filterProps.onPageChange(1);
+                onSearch(val);
+              }}
               placeholder="input search text"
               enterButton
             />

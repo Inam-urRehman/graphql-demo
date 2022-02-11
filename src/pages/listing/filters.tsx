@@ -3,13 +3,14 @@ import { FormValues } from "types";
 import { FiltersProps } from "./list-header";
 
 export const Filters = (props: FiltersProps) => {
-  const { formValues, onSubmit, toggleVisible } = props;
+  const { formValues, onSubmit, toggleVisible, onPageChange } = props;
 
   return (
     <Form
       layout="horizontal"
       initialValues={formValues}
       onFinish={(values: FormValues) => {
+        onPageChange(1);
         onSubmit?.(values);
       }}
       className="filters"

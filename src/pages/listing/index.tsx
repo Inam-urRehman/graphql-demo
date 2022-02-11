@@ -36,6 +36,7 @@ export function Listing() {
                   formValues={filters}
                   onSearch={setSearchStr}
                   onSubmit={setFilters}
+                  onPageChange={setPage}
                 />
                 <List
                   itemLayout="horizontal"

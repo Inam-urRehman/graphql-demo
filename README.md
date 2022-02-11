@@ -1,5 +1,10 @@
 # Getting Started with Create React App
 
+## Custom Docs
+
+1. [How to run](./docs/how-to-run.md)
+1. [Improvements](./docs/improvements.md)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
