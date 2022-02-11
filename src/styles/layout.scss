@@ -1,0 +1,70 @@
+@import "./variables.scss";
+
+.ant-layout-has-sider {
+  height: calc(100vh - 82px);
+
+  .sidebar {
+    width: 200px;
+
+    .side-menu {
+      height: inherit;
+      border-right: 0;
+
+      .ant-menu-item-selected {
+        background: rgba($secondary-color, 0.3);
+        color: rgba($primary-color, 0.8);
+
+        &::after {
+          border-color: rgba($primary-color, 0.8);
+        }
+      }
+    }
+  }
+
+  .page-content {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+    margin: 0;
+    min-height: 280px;
+    border-left: 1px solid rgba($primary-color, 0.05);
+    background: white;
+    overflow: hidden;
+
+    .listing-header {
+      background: #f0f2f5;
+    }
+
+    .ant-list {
+      height: 100%;
+      margin: 24px 0 24px 24px;
+      padding-right: 24px;
+      overflow: auto;
+
+      .list-row {
+        cursor: pointer;
+        padding-left: 12px;
+
+        &:hover {
+          background: rgba($secondary-color, 0.3);
+        }
+
+        .list-character-description {
+          padding-left: 0;
+          list-style: none;
+          display: flex;
+
+          > li {
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .ant-list-pagination {
+    position: sticky;
+    bottom: 0;
+    background: white;
+  }
+}

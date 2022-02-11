@@ -1,0 +1,13 @@
+.app-headers {
+  background: #26003b;
+
+  .ant-page-header-content {
+    display: flex;
+
+    .ant-typography {
+      text-transform: uppercase;
+      color: white;
+      margin-left: 20px;
+    }
+  }
+}

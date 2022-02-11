@@ -1,0 +1,15 @@
+.ant-descriptions {
+  flex: 1;
+  overflow: auto;
+  padding: 24px;
+
+  .ant-descriptions-item-label {
+    font-weight: bold;
+  }
+
+  .character-name {
+    .ant-avatar {
+      margin-right: 5px;
+    }
+  }
+}

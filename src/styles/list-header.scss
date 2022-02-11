@@ -1,0 +1,24 @@
+.ant-page-header-heading {
+  width: 100%;
+
+  .ant-page-header-heading-left {
+    width: inherit;
+
+    .ant-page-header-heading-title {
+      width: inherit;
+
+      .list-header {
+        display: flex;
+        justify-content: space-between;
+
+        .list-actions {
+          display: flex;
+
+          > button {
+            margin-left: 12px;
+          }
+        }
+      }
+    }
+  }
+}
